@@ -22,7 +22,8 @@ public class CasController {
     }
 
     @RequestMapping("hello")
-    public String hello() {
+    public String hello()
+    {
         return "hello";
     }
 
@@ -37,4 +38,5 @@ public class CasController {
     public String logoutsuccess(HttpSession session) {
         return "logoutsuccess";
     }
+
 }

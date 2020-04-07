@@ -5,6 +5,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>cas</module>
+        <module>cas-shiro</module>
+        <module>shiro</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,6 +25,8 @@
     </properties>
 
     <dependencies>
+
+<!--        rabbitmq-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
@@ -70,6 +74,18 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.4.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>1.4.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
